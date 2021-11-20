@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchGiftsActivity(View view) {
-        Intent intent = new Intent(this, CountDownActivity.class);
+        Intent intent = new Intent(this, GiftActivity.class);
         startActivity(intent);
     }
 
     public void launchCountdownActivity(View view) {
-        Intent intent = new Intent(this, GiftActivity.class);
+        Intent intent = new Intent(this, CountDownActivity.class);
         startActivity(intent);
     }
 
