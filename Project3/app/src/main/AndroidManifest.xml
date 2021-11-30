@@ -49,7 +49,7 @@
         </activity>
 
         <activity
-            android:name=".MomGift"
+            android:name=".GrandparentsGift"
             android:exported="false"
             android:parentActivityName=".GiftActivity">
             <meta-data
@@ -58,7 +58,7 @@
         </activity>
 
         <activity
-            android:name=".GrandparentsGift"
+            android:name=".MomGift"
             android:exported="false"
             android:parentActivityName=".GiftActivity">
             <meta-data

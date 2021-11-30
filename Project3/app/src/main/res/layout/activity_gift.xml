@@ -33,7 +33,8 @@
             android:textAlignment="center"
             android:textColor="#833636"
             app:cornerRadius="10sp"
-            android:onClick="momgift"/>
+            android:onClick="momgift"
+            />
 
         <Button
             android:id="@+id/father"

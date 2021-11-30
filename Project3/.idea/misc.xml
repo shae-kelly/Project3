@@ -10,7 +10,9 @@
         <entry key="app/src/main/res/layout/activity_count_down.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_gift.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_gift_item.xml" value="0.2614972189397806" />
+        <entry key="app/src/main/res/layout/activity_grandparents_gift.xml" value="0.18115942028985507" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_mom_gift.xml" value="0.13043478260869565" />
         <entry key="app/src/main/res/layout/activity_secret_santa.xml" value="0.375" />
       </map>
     </option>
