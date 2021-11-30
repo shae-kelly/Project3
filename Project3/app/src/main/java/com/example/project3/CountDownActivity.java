@@ -29,13 +29,12 @@ public class CountDownActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_count_down);
         mdays = (TextView) findViewById(R.id.Days);
+        findDays(mdays);
     }
 
     public void findDays(View view) {
         FetchTime ft = new FetchTime(mdays);
         ft.execute();
-        //don't directly call callinbackground, the execute method calls it
-
     }
 }
 

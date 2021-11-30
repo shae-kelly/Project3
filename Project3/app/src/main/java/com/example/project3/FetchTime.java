@@ -17,16 +17,13 @@ import java.net.URL;
 public class FetchTime extends AsyncTask<String, Void, String> {
     private final WeakReference<TextView> mdays;
 
-    FetchTime(TextView Days) { //TextView authorText) {
+    FetchTime(TextView Days) {
         this.mdays = new WeakReference<>(Days);
-        //this.mAuthorText = new WeakReference<>(authorText);
     }
 
-    protected String getDaysTill(String query) throws IOException {
+    protected String getDaysTill() throws IOException {
         // API URL
         String apiURL = "https://christmas-days.anvil.app/_/api/get_days";
-        //Append query
-        apiURL += query;
 
         //Make connection to API
         URL requestURL = new URL(apiURL);
@@ -46,44 +43,35 @@ public class FetchTime extends AsyncTask<String, Void, String> {
             builder.append("\n");
         }
         String jsonString = builder.toString();
-        Log.d("CountActivityJsonString", jsonString);
+
         return jsonString;
     }
 
     @Override
-    protected String doInBackground(String[] days) {
+    protected String doInBackground(String... days) {
         String jsonString = null;
+
         try {
-            jsonString = getDaysTill(days[1]);
+            jsonString = getDaysTill();
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Log.d("FetchTime.java", jsonString);
+
         return jsonString;
     }
 
     protected void onPostExecute(String s) {
-        //string s is ^^ json string
+        String result = null;
         super.onPostExecute(s);
-        String days = null;
-        //String authors= null;
         JSONObject jsonObject = null;
-        //JSONArray itemsArray = null;
 
-        int i = 0;
         try{
-//
-//            jsonObject = new JSONObject(s);
-//            System.out.println(jsonObject);
-            //String result = jsonObject.getString();
-//            for (int i =0; i < jsonObject.length(); i++)    {
-//                if (result.charAt(i) == ":") {
-//                    result = result;
-//
-//                }
-//            }
+            jsonObject = new JSONObject(s);
+            result = jsonObject.getString("Days to Christmas");
+            mdays.get().setText(result);
         } catch (Exception e)   {
             e.printStackTrace();
         }
-
     }
 }
