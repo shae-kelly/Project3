@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/gabriela"
+        android:text="Christmas App Name "
+        android:textColor="#E14646"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="276dp"
+        android:layout_height="437dp"
+        android:layout_marginTop="-8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/christmas_tree" />
+
+    <Button
+        android:id="@+id/secretSanta"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="-42dp"
+        android:backgroundTint="#F6E3E3"
+        android:shadowColor="#555555"
+        android:shadowDy="4"
+        android:text="Secret\nSanta"
+        android:textColor="#E14646"
+        app:cornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:onClick="launchSecretSantaActivity"/>
+
+    <Button
+        android:id="@+id/countdown"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F6E3E3"
+        android:text="Gift\nIdeas"
+        android:textColor="#E14646"
+        app:cornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gifts"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:onClick="launchGiftsActivity"/>
+
+    <Button
+        android:id="@+id/gifts"
+        android:layout_width="142dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-42dp"
+        android:backgroundTint="#F6E3E3"
+        android:fontFamily="sans-serif-medium"
+        android:text="Christmas\nCountdown"
+        android:textColor="#E14646"
+        app:cornerRadius="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secretSanta"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:onClick="launchCountdownActivity"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
