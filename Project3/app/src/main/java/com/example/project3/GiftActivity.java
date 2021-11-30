@@ -13,4 +13,24 @@ public class GiftActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gift);
     }
+
+    public void momgift(View view) {
+        Intent intent = new Intent(this, MomGift.class);
+        startActivity(intent);
+    }
+
+    public void dadgift(View view) {
+        Intent intent = new Intent(this, FatherGift.class);
+        startActivity(intent);
+    }
+
+    public void grandparentsgift(View view) {
+        Intent intent = new Intent(this, GrandparentsGift.class);
+        startActivity(intent);
+    }
+
+    public void friendsgift(View view) {
+        Intent intent = new Intent(this, FriendsGift.class);
+        startActivity(intent);
+    }
 }

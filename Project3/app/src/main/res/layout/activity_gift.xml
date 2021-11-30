@@ -33,7 +33,7 @@
             android:textAlignment="center"
             android:textColor="#833636"
             app:cornerRadius="10sp"
-            android:onClick="mothergift"/>
+            android:onClick="momgift"/>
 
         <Button
             android:id="@+id/father"
@@ -44,7 +44,8 @@
             android:backgroundTint="#FFFFFF"
             android:text="Father Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp" />
+            app:cornerRadius="10sp"
+            android:onClick="dadgift"/>
 
         <Button
             android:id="@+id/friends"
@@ -55,7 +56,8 @@
             android:backgroundTint="#FFFFFF"
             android:text="Friend Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp" />
+            app:cornerRadius="10sp"
+            android:onClick="friendsgift"/>
 
         <Button
             android:id="@+id/grandparents"
@@ -66,7 +68,8 @@
             android:backgroundTint="#FFFFFF"
             android:text="Grandparent Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp" > </Button>
+            app:cornerRadius="10sp"
+            android:onClick="grandparentsgift"> </Button>
 
 
     </LinearLayout>
