@@ -11,16 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3">
-
+        <activity
+            android:name=".gift_item"
+            android:exported="false" />
         <activity
             android:name=".GiftActivity"
-            android:exported="false" android:parentActivityName=".MainActivity">
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.project3.MainActivity" />
+                android:value="com.example.project3.MainActivity" />
         </activity>
-
         <activity
             android:name=".CountDownActivity"
             android:exported="false"
@@ -29,7 +30,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.project3.MainActivity" />
         </activity>
-
         <activity
             android:name=".SecretSantaActivity"
             android:exported="false"
@@ -38,7 +38,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.project3.MainActivity" />
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
