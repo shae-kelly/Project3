@@ -10,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3">
         <activity
-            android:name=".FriendsGift"
-            android:exported="false" />
-        <activity
-            android:name=".GrandparentsGift"
-            android:exported="false" />
-        <activity
-            android:name=".FatherGift"
-            android:exported="false" />
-        <activity
-            android:name=".MomGift"
-            android:exported="false" />
-        <activity
             android:name=".gift_item"
             android:exported="false" />
         <activity
