@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/gabriela"
-        android:text="Christmas App Name "
+        android:text="Christmas Countdown"
         android:textColor="#E14646"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
