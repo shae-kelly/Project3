@@ -33,4 +33,10 @@ public class GiftActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FriendsGift.class);
         startActivity(intent);
     }
+
+    public void FavoriteGifts(View view){
+        Intent intent = new Intent(this, FavoritesActivity.class);
+        startActivity(intent);
+    }
+
 }
