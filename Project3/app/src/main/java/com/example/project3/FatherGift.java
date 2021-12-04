@@ -19,6 +19,7 @@ public class FatherGift extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_father_gift);
+
         mFatherGiftList.add("Packard Bell Home Theater Projector And Screen Set");
         mFatherGiftList.add("UGG Tasman Slipper");
         mFatherGiftList.add("Tooletries Toiletry Wall Organizer");
