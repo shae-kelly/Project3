@@ -71,6 +71,17 @@
             android:textColor="#833636"
             app:cornerRadius="10sp"
             android:onClick="grandparentsgift"> </Button>
+        <Button
+            android:id="@+id/favorites"
+            android:layout_width="325dp"
+            android:layout_height="76dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Favorite Gifts"
+            android:textColor="#833636"
+            app:cornerRadius="10sp"
+            android:onClick="FavoriteGifts"> </Button>
 
 
     </LinearLayout>
