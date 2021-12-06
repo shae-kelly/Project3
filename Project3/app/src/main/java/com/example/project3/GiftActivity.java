@@ -39,9 +39,8 @@ public class GiftActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-    public void friendsgift(View view) {
-        Intent intent = new Intent(this, FriendsGift.class);
+    public void brothergifts(View view) {
+        Intent intent = new Intent(this, BrotherGift.class);
         startActivity(intent);
     }
 }

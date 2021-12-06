@@ -48,18 +48,6 @@
             app:cornerRadius="10sp" ></Button>
 
         <Button
-            android:id="@+id/friends"
-            android:layout_width="325dp"
-            android:layout_height="63dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="13dp"
-            android:backgroundTint="#FFFFFF"
-            android:onClick="friendsgift"
-            android:text="Friend Gifts"
-            android:textColor="#833636"
-            app:cornerRadius="10sp"></Button>
-
-        <Button
             android:id="@+id/grandparents"
             android:layout_width="325dp"
             android:layout_height="63dp"
@@ -80,6 +68,18 @@
             android:backgroundTint="#FFFFFF"
             android:onClick="sistergifts"
             android:text="Sister Gifts"
+            android:textColor="#833636"
+            app:cornerRadius="10sp"></Button>
+
+        <Button
+            android:id="@+id/brother"
+            android:layout_width="325dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="13dp"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="brothergifts"
+            android:text="Brother Gifts"
             android:textColor="#833636"
             app:cornerRadius="10sp"></Button>
 
