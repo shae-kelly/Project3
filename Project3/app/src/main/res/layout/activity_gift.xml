@@ -10,8 +10,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="356dp"
-        android:layout_height="440dp"
+        android:layout_width="354dp"
+        android:layout_height="454dp"
         android:background="#EAD7D7"
         android:backgroundTint="#FDECEC"
         android:orientation="vertical"
@@ -24,64 +24,76 @@
         <Button
             android:id="@+id/mother"
             android:layout_width="325dp"
-            android:layout_height="76dp"
+            android:layout_height="63dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="15dp"
             android:backgroundTint="#FFFFFF"
+            android:onClick="momgift"
             android:text="Mother Gifts"
             android:textAlignment="center"
             android:textColor="#833636"
-            app:cornerRadius="10sp"
-            android:onClick="momgift"
-            />
+            app:cornerRadius="10sp" ></Button>
 
         <Button
             android:id="@+id/father"
             android:layout_width="325dp"
-            android:layout_height="76dp"
+            android:layout_height="63dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="13dp"
             android:backgroundTint="#FFFFFF"
+            android:onClick="dadgift"
             android:text="Father Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp"
-            android:onClick="dadgift"/>
+            app:cornerRadius="10sp" ></Button>
 
         <Button
             android:id="@+id/friends"
             android:layout_width="325dp"
-            android:layout_height="76dp"
+            android:layout_height="63dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="13dp"
             android:backgroundTint="#FFFFFF"
+            android:onClick="friendsgift"
             android:text="Friend Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp"
-            android:onClick="friendsgift"/>
+            app:cornerRadius="10sp"></Button>
 
         <Button
             android:id="@+id/grandparents"
             android:layout_width="325dp"
-            android:layout_height="76dp"
+            android:layout_height="63dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="13dp"
             android:backgroundTint="#FFFFFF"
+            android:onClick="grandparentsgift"
             android:text="Grandparent Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp"
-            android:onClick="grandparentsgift"> </Button>
+            app:cornerRadius="10sp"></Button>
+
         <Button
             android:id="@+id/favorites"
             android:layout_width="325dp"
-            android:layout_height="76dp"
+            android:layout_height="63dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="13dp"
             android:backgroundTint="#FFFFFF"
+            android:onClick="FavoriteGifts"
             android:text="Favorite Gifts"
             android:textColor="#833636"
-            app:cornerRadius="10sp"
-            android:onClick="FavoriteGifts"> </Button>
+            app:cornerRadius="10sp"></Button>
+
+        <Button
+            android:id="@+id/sisters"
+            android:layout_width="325dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="13dp"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="sistergifts"
+            android:text="Sister Gifts"
+            android:textColor="#833636"
+            app:cornerRadius="10sp"></Button>
 
 
     </LinearLayout>

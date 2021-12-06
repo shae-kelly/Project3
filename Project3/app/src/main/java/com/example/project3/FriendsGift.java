@@ -18,7 +18,7 @@ public class FriendsGift extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_friends_gift);
+        setContentView(R.layout.activity_friends_gift2);
 
         mFriendGiftList.add("Stargazer Knit Throw Blanket");
         mFriendGiftDesc.add("Matching Plaid Flannel Pajama Pants");
