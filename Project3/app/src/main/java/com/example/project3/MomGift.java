@@ -10,8 +10,8 @@ import java.util.LinkedList;
 
 public class MomGift extends AppCompatActivity {
     private final LinkedList<String> name = new LinkedList<>();
-    private LinkedList<String> description = new LinkedList<>();
-    private LinkedList<Integer> links = new LinkedList<>();
+    private final LinkedList<String> description = new LinkedList<>();
+    private final LinkedList<Integer> links = new LinkedList<>();
     private RecyclerView mRecyclerView;
     private GiftAdapter mAdapter;
 

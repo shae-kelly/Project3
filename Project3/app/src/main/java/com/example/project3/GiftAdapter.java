@@ -47,10 +47,9 @@ public class GiftAdapter extends RecyclerView.Adapter<GiftAdapter.GiftViewHolder
     }
 
     public void onBindViewHolder(GiftAdapter.GiftViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        this.pos = position;
+        holder.nameItemView.setTag(position);
         String mCurrent = mNameList.get(position);
         holder.nameItemView.setText(mCurrent);
-        name = mCurrent;
         Integer mCurrent3 = mLinksList.get(position);
         holder.imageVieww.setImageResource(mCurrent3);
         image = mCurrent3;
@@ -83,9 +82,9 @@ public class GiftAdapter extends RecyclerView.Adapter<GiftAdapter.GiftViewHolder
         }
 
         public void onClick(View v) {
+            pos = (int) nameItemView.getTag();
             Log.e("poss", String.valueOf(pos));
-            writeToFile(mNameList.get(pos-1), mDescriptionList.get(pos-1), mLinksList.get(pos-1));
-
+            writeToFile(mNameList.get(pos), mDescriptionList.get(pos), mLinksList.get(pos));
             Intent intent = new Intent(context, FavoritesActivity.class);
             context.startActivity(intent);
         }
