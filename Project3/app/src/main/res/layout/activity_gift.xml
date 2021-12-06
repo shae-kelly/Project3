@@ -72,18 +72,6 @@
             app:cornerRadius="10sp"></Button>
 
         <Button
-            android:id="@+id/favorites"
-            android:layout_width="325dp"
-            android:layout_height="63dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="13dp"
-            android:backgroundTint="#FFFFFF"
-            android:onClick="FavoriteGifts"
-            android:text="Favorite Gifts"
-            android:textColor="#833636"
-            app:cornerRadius="10sp"></Button>
-
-        <Button
             android:id="@+id/sisters"
             android:layout_width="325dp"
             android:layout_height="63dp"
@@ -92,6 +80,18 @@
             android:backgroundTint="#FFFFFF"
             android:onClick="sistergifts"
             android:text="Sister Gifts"
+            android:textColor="#833636"
+            app:cornerRadius="10sp"></Button>
+
+        <Button
+            android:id="@+id/favorites"
+            android:layout_width="325dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="13dp"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="FavoriteGifts"
+            android:text="Favorite Gifts"
             android:textColor="#833636"
             app:cornerRadius="10sp"></Button>
 
