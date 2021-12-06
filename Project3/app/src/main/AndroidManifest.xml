@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3">
         <activity
-            android:name=".BrotherGift"
-            android:exported="false" />
-        <activity
             android:name=".gift_item"
             android:exported="false" />
         <activity
@@ -76,6 +73,14 @@
         </activity>
         <activity
             android:name=".SisterGift"
+            android:exported="false"
+            android:parentActivityName=".GiftActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.project3.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BrotherGift"
             android:exported="false"
             android:parentActivityName=".GiftActivity">
             <meta-data
