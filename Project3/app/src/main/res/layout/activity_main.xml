@@ -31,53 +31,34 @@
         app:srcCompat="@drawable/christmas_tree" />
 
     <Button
-        android:id="@+id/secretSanta"
-        android:layout_width="94dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="-42dp"
-        android:backgroundTint="#F6E3E3"
-        android:shadowColor="#555555"
-        android:shadowDy="4"
-        android:text="Secret\nSanta"
-        android:textColor="#E14646"
-        app:cornerRadius="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:onClick="launchSecretSantaActivity"/>
-
-    <Button
         android:id="@+id/countdown"
-        android:layout_width="87dp"
+        android:layout_width="142dp"
         android:layout_height="82dp"
-        android:layout_marginTop="-42dp"
+        android:layout_marginTop="-50dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#F6E3E3"
+        android:onClick="launchGiftsActivity"
         android:text="Gift\nIdeas"
         android:textColor="#E14646"
         app:cornerRadius="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gifts"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:onClick="launchGiftsActivity"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/gifts"
         android:layout_width="142dp"
         android:layout_height="82dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="-42dp"
+        android:layout_marginTop="-50dp"
         android:backgroundTint="#F6E3E3"
         android:fontFamily="sans-serif-medium"
+        android:onClick="launchCountdownActivity"
         android:text="Christmas\nCountdown"
         android:textColor="#E14646"
         app:cornerRadius="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/secretSanta"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:onClick="launchCountdownActivity"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

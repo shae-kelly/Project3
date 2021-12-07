@@ -31,14 +31,6 @@
                 android:value="com.example.project3.MainActivity" />
         </activity>
         <activity
-            android:name=".SecretSantaActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.project3.MainActivity" />
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
