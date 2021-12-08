@@ -113,9 +113,9 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="301dp"
-        android:layout_height="28dp"
-        android:text="Browse gifts ideas for friends and family!"
+        android:layout_width="298dp"
+        android:layout_height="38dp"
+        android:text="Browse gifts ideas for friends and family! Click a gift to save it in favorite gifts for later!"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
