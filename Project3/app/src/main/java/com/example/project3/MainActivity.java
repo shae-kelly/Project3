@@ -31,11 +31,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
-    public void launchSecretSantaActivity(View view) {
-        Intent intent = new Intent(this, SecretSantaActivity.class);
-        startActivity(intent);
-    }
+    
 
     public void launchGiftsActivity(View view) {
         Intent intent = new Intent(this, GiftActivity.class);
